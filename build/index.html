@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto Food Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/build/favicon.ico">
+    <script
+      src="https://kit.fontawesome.com/f01f71d16e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-containerColor">
+    <header class="sticky top-0 z-10 p-5 border-b-2 bg-containerColor">
+      <section class="w-full mx-auto flex justify-between items-center">
+        <h1 class="text-titleColor text-2xl font-medium pb-3" class="text-textColor text-4xl font-bold">Resto</h1>
+        <div>
+          <button
+            id="hamburgerbtn"
+            class="text-3xl md:hidden cursor-pointer text-textColor"
+          >
+            &#9776;
+          </button>
+
+          <!-- For big screens -->
+          <nav
+            class="hidden md:block text-textColor font-medium text-xl space-x-8"
+          aria-label="main">
+            <a href="#home" class="hover:text-firstColor">Home</a
+            ><a href="#about" class="hover:text-firstColor">About</a
+            ><a href="#services" class="hover:text-firstColor">Services</a
+            ><a href="#menu" class="hover:text-firstColor">Menu</a>
+            <a href="#contact" class="hover:text-firstColor">Contact Us</a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Mobile Menu -->
+
+      <section id="mobile-menu" class="hidden font-medium text-xl flex-col justify-center items-center gap-4 text-textColor">
+          <a href="#home" class="hover:text-firstColor">Home</a
+            ><a href="#about" class="hover:text-firstColor">About</a
+            ><a href="#services" class="hover:text-firstColor">Services</a
+            ><a href="#menu" class="hover:text-firstColor">Menu</a>
+            <a href="#contact" class="hover:text-firstColor">Contact Us</a>
+      </section>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="home"
+        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <article
+          class="sm:w-1/2 flex items-center justify-center flex-col sm:items-start"
+        >
+          <h1
+            class="max-w-md text-firstColor text-4xl font-bold sm:text-5xl text-center sm:text-left"
+          >
+            Resto Food
+          </h1>
+          <p
+            class="max-w-md sm:text-3xl text-textColor text-2xl font-normal py-3 text-center sm:text-left"
+          >
+            Try the best food for the week. Check out the menu for yummy and
+            delicious dishes to be delivered at your house. Happy eating!
+          </p>
+          <button
+            class="w-48 bg-firstColor text-bodyColor py-3 px-4 rounded-md mt-3 text-xl"
+          >
+            View Menu
+          </button>
+        </article>
+        <img class="w-96" src="./img/home.png" alt="Home" />
+      </section>
+
+      <!-- <hr class="mx-auto bg-black" /> -->
+
+      <!-- About section starts -->
+      <section
+        id="about"
+        class="p-8 flex flex-col justify-center items-center gap-8 sm:flex-row-reverse sm:gap-11 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <article
+          class="sm:w-1/2 flex flex-col justify-center items-center sm:items-start"
+        >
+          <h1
+            class="text-firstColor text-2xl font-medium text-center sm:text-left"
+          >
+            About Us
+          </h1>
+          <h2
+            class="text-titleColor text-4xl font-bold py-4 text-center sm:text-left"
+          >
+            We cook the best tasty food
+          </h2>
+          <p
+            class="text-textColor text-xl font-medium py-4 text-center sm:text-left"
+          >
+            We cook the best food in the entire city, with excellent customer
+            service, the best meals and at the best price, visit us.
+          </p>
+          <button
+            class="w-48 bg-firstColor text-bodyColor py-3 px-4 rounded-md mt-3 text-xl"
+          >
+            Explore History
+          </button>
+        </article>
+        <img class="w-96" src="./img/about.jpg" alt="" />
+      </section>
+
+      <!-- About section ends -->
+      <!-- <hr class="mx-auto bg-black" /> -->
+
+      <!-- Services section starts -->
+      <section
+        id="services"
+        class="my-12 p-6 flex flex-col justify-center items-center scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h1 class="text-firstColor text-xl font-medium sm:text-2xl text-center">
+          Offering
+        </h1>
+        <h2
+          class="text-titleColor text-3xl font-bold sm:text-5xl text-center p-5"
+        >
+          Our amazing services
+        </h2>
+        <section
+          class="flex flex-col sm:flex-row justify-center items-center gap-8 py-6 sm:gap-14"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <i class="fa-solid fa-utensils text-firstColor text-4xl p-3"></i>
+            <h3 class="text-titleColor font-bold text-3xl py-3">
+              Excellent food
+            </h3>
+            <p class="text-center text-textColor p-5">
+              We offer our clients excellent quality services for many years,
+              with the best and delicious food in the city.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fa-solid fa-pizza-slice text-firstColor text-4xl p-3"></i>
+            <h3 class="text-titleColor font-bold text-3xl py-3">Fast food</h3>
+            <p class="text-center text-textColor p-5">
+              We offer our clients excellent quality services for many years,
+              with the best and delicious food in the city.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fa-solid fa-truck-fast text-firstColor text-4xl p-3"></i>
+            <h3 class="text-titleColor font-bold text-3xl py-3">Delivery</h3>
+            <p class="text-center text-textColor p-5">
+              We offer our clients excellent quality services for many years,
+              with the best and delicious food in the city.
+            </p>
+          </div>
+        </section>
+      </section>
+      <!-- Services section ends -->
+      <!-- <hr class="mx-auto bg-black" /> -->
+
+      <section
+        id="menu"
+        class="my-12 p-6 flex flex-col justify-center items-center scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height text-center"
+      >
+        <h1 class="text-firstColor text-4xl font-bold">Special</h1>
+        <h2 class="text-titleColor text-3xl font-medium py-4">
+          Menu of the week
+        </h2>
+        <section
+          class="flex flex-col justify-center items-center gap-8 sm:flex-row py-6"
+        >
+          <div
+            class="bg-containerColor border borders-solid border-containerColor rounded-xl shadow-xl p-8 text-left"
+          >
+            <img src="./img/plate1.png" alt="" />
+            <h3 class="text-titleColor text-2xl font-medium pt-3">
+              Barbecue Salad
+            </h3>
+            <p class="text-textColor text-xl py-2">Delicious dish</p>
+            <p class="text-titleColor font-medium">$22.00</p>
+          </div>
+          <div
+            class="bg-containerColor border borders-solid border-containerColor rounded-xl shadow-xl p-8 text-left"
+          >
+            <img src="./img/plate2.png" alt="" />
+            <h3 class="text-titleColor text-2xl font-medium pt-3">
+              Salad with fish
+            </h3>
+            <p class="text-textColor text-xl py-2">Delicious dish</p>
+            <p class="text-titleColor font-medium">$22.00</p>
+          </div>
+          <div
+            class="bg-containerColor border borders-solid border-containerColor rounded-xl shadow-xl p-8 text-left"
+          >
+            <img src="./img/plate3.png" alt="" />
+            <h3 class="text-titleColor text-2xl font-medium pt-3">
+              Spinach salad
+            </h3>
+            <p class="text-textColor text-xl py-2">Delicious dish</p>
+            <p class="text-titleColor font-medium">$22.00</p>
+          </div>
+        </section>
+      </section>
+
+      <!-- <hr class="mx-auto bg-black" /> -->
+
+      <!-- Contact section starts -->
+      <section
+        id="contact"
+        class="my-12 p-6 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height flex flex-col justify-center gap-4 items-center text-center sm:flex-row sm:text-left"
+      >
+        <div>
+          <h1 class="text-firstColor text-2xl font-bold">Let's talk</h1>
+          <h2 class="text-titleColor text-3xl font-medium py-4">Contact Us</h2>
+          <p class="text-textColor text-lg py-4">
+            If you want to reserve a table in our restaurant, contact us and we
+            will attend you quickly, with our 24/7 chat service.
+          </p>
+        </div>
+        <div class="flex items-center">
+          <button
+            class="mt-3 w-48 bg-firstColor py-4 px-5 text-containerColor rounded-lg"
+          >
+            Contact us now
+          </button>
+        </div>
+      </section>
+
+      <!-- <hr class="mx-auto bg-black" /> -->
+      <!-- Contact section ends -->
+    </main>
+
+    <footer id="footer" class="mb-9">
+      <section class="max-w-4xl mx-auto py-8 px-5 flex flex-col gap-8 sm:flex-row sm:justify-between sm:items-center">
+        <div class="text-textColor">
+          <h1 class="text-firstColor text-2xl font-bold pb-3">Resto Food</h1 class="text-titleColor text-2xl font-medium pb-3">
+          <h2>Restaurant</h2>
+          <div class="flex items-center gap-8 text-titleColor text-2xl pt-4">
+            <i class="fa-brands fa-twitter cursor-pointer hover:text-textColor"></i>
+            <i class="fa-brands fa-facebook-f cursor-pointer hover:text-textColor"></i>
+            <i class="fa-brands fa-instagram cursor-pointer hover:text-textColor"></i>
+          </div>
+        </div>
+        <div class="text-textColor">
+          <h1 class="text-titleColor text-2xl font-bold pb-3">Services</h1 class="text-titleColor text-2xl font-medium pb-3">
+          <p>Delivery</p>
+          <p>Pricing</p>
+          <p>Fast Food</p>
+          <p>Reserve your spot</p>
+        </div>
+        <div class="text-textColor">
+          <h1 class="text-titleColor text-2xl font-bold pb-3">Information</h1 class="text-titleColor text-2xl font-medium pb-3">
+          <p>Contact us</p>
+          <p>Events</p>
+          <p>Privacy Policy</p>
+          <p>Terms of service</p>
+        </div>
+        <div class="text-textColor">
+          <h1 class="text-titleColor text-2xl font-bold pb-3">Address</h1>
+          <p>Lima - Peru</p>
+          <p>Jr - Union #999</p>
+          <a href="tel:+1555555555">999 - 888 -777</a><br>
+          <a href="mailto:tastyfood@email.com">tastyfood@email.com</a>
+        </div>
+        
+      </section>
+      <div class="text-center pt-4">
+        <p class="text-textColor">
+          Copyright &copy; <span id="year">2023.</span>&nbsp;All rights
+          reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
